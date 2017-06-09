@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="Practica">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+</head>
+<body>
+    <nav-bar></nav-bar>
+    <ng-view></ng-view>
+    <custom-footer></custom-footer>
+  <!-- Siempre poner JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="app/routes/routes.js"></script>
+  <script src="app/components/muse/muse.js"></script>
+  <script src="app/components/pate/pate.js"></script>
+  <script src="app/components/nav/nav.js"></script>
+  <script src="app/components/footer/footer.js"></script>
+</body>
+</html>
