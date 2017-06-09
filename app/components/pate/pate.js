@@ -11,7 +11,16 @@
     .component("pateComponent", componentPate)
   function pateCtrl(){
 
-      var com = this;
+      var pate = this;
       
+      pate.check = function(){
+        var obj = {
+          nombre: pate.nombre,
+          apellido: pate.apellido,
+          direccion: pate.direccion,
+          servicio: pate.servicio,
+        }
+        console.log("XD",obj)
+      }
   }
 })();
