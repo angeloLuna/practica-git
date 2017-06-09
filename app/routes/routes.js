@@ -14,6 +14,9 @@
         template: '<pate-component></pate-component>'
       })
       .otherwise({ redirectTo: '/' })
+      .when('/paramore',{
+      template: "<practica-componentp></practica-componentp>"
+    })
   }
 
 })();
