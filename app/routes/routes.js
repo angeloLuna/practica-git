@@ -8,13 +8,10 @@
   function config($routeProvider){
     $routeProvider
       .when('/',{
-        template: '<practica-component></practica-component>'
+        template: '<main-component></main-component>'
       })
       .when('/pate',{
         template: '<pate-component></pate-component>'
-      })
-      .when('/form',{
-        template: '<form-user></form-user>'
       })
       .otherwise({ redirectTo: '/' })
       .when('/paramore',{
