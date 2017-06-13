@@ -10,13 +10,18 @@
       .when('/',{
         template: '<main-component></main-component>'
       })
-      .when('/pate',{
-        template: '<pate-component></pate-component>'
+      // .when('/pate',{
+      //   template: '<pate-component></pate-component>'
+      // })
+      // .when('/paramore',{
+      // template: "<practica-componentp></practica-componentp>"
+      // })
+      .when('/genero',{
+        template: '<genero-component></genero-component>'
       })
-      .otherwise({ redirectTo: '/' })
-      .when('/paramore',{
-      template: "<practica-componentp></practica-componentp>"
-    })
+
+
+    .otherwise({ redirectTo: '/' })
   }
 
 })();
