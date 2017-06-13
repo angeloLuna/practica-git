@@ -7,7 +7,7 @@
 
   function config($routeProvider){
     $routeProvider
-      .when('/discos',{
+      .when('/sugerencias',{
         template: '<componente-inicio></componente-inicio>'
       })
       .when('/pate',{
