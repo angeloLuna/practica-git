@@ -7,8 +7,14 @@
 
   function config($routeProvider){
     $routeProvider
+    .when('/sugerencias',{
+      template: '<componente-inicio></componente-inicio>'
+      })
       .when('/',{
-        template: '<practica-component></practica-component>'
+        template: '<main-component></main-component>'
+      })
+      .when('/genero',{
+        template: '<genero-component></genero-component>'
       })
       .when('/pate',{
         template: '<pate-component></pate-component>'
@@ -47,6 +53,12 @@
       .when("/rap/tino",
       {
         template:"<tino-component></tino-component>"
+      })
+      .when('/absolution',{
+        template: "<practica-absolution></practica-absolution>"
+      })
+      .when('/little',{
+        template: "<little-component></little-component>"
       })
 
 
