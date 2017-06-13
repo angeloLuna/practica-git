@@ -10,6 +10,12 @@
       .when('/sugerencias',{
         template: '<componente-inicio></componente-inicio>'
       })
+      .when('/',{
+        template: '<main-component></main-component>'
+      })
+      .when('/genero',{
+        template: '<genero-component></genero-component>'
+      })
       .when('/pate',{
         template: '<pate-component></pate-component>'
       })
@@ -24,8 +30,8 @@
       template: "<practica-absolution></practica-absolution>"
     })
     .when('/little',{
-    template: "<little-component></little-component>"
-  })
+      template: "<little-component></little-component>"
+    })
 
   }
 
