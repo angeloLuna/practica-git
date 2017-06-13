@@ -1,0 +1,101 @@
+<!-- Pagination -->
+  <ul class="pagination center">
+    <li class="disabled"><a><i class="medium material-icons">chevron_left</i></a></li>
+    <li class="active blue"><a ng-click="$ctrl.variable = '1'">1</a></li>
+    <li class="waves-effect"><a ng-click="$ctrl.variable = '2'">2</a></li>
+    <li class="waves-effect"><a ng-click="$ctrl.variable = '3'">3</a></li>
+    <li class="waves-effect"><a ng-click="$ctrl.variable = '4'">4</a></li>
+    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+  </ul>
+<!-- CARDS 1 -->
+<div ng-if="$ctrl.variable == '1'">
+  <div style="display:flex; flex-wrap: wrap; align-content: flex-start;">
+    <div class="row" ng-repeat="genero in $ctrl.array" ng-if="genero.pag== '1' ">
+      <div class="col s12 m5" style="width: 450px;">
+        <div class="card medium z-depth-5">
+          <div class="card-image">
+            <img  src="assets/img/muse.jpg">
+            <span class="card-title black-text"><h3>{{genero.genero}}</h3></span>
+          </div>
+          <div class="card-content" style="padding-top:10px; padding-bottom:1px; padding-left:10px; padding-right: 10px;">
+            <p>{{genero.descripcion}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- CARDS 2 -->
+<div ng-if="$ctrl.variable == '2'">
+  <div style="display:flex; flex-wrap: wrap; align-content: flex-start;">
+    <div class="row" ng-repeat="genero in $ctrl.array" ng-if="genero.pag== '2' ">
+      <div class="col s12 m5" style="width: 450px;">
+        <div class="card medium z-depth-5">
+          <div class="card-image">
+            <img  src="assets/img/metallica.jpg">
+            <span class="card-title black-text"><h3>{{genero.genero}}</h3></span>
+          </div>
+          <div class="card-content" style="padding-top:10px; padding-bottom:1px; padding-left:10px; padding-right: 10px;">
+            <p>{{genero.descripcion}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- CARDS 3 -->
+<div ng-if="$ctrl.variable == '3'">
+  <div style="display:flex; flex-wrap: wrap; align-content: flex-start;">
+    <div class="row" ng-repeat="genero in $ctrl.array" ng-if="genero.pag== '3' ">
+      <div class="col s12 m5" style="width: 450px;">
+        <div class="card medium z-depth-5">
+          <div class="card-image">
+            <img  src="assets/img/2cellos.jpg">
+            <span class="card-title"><h3>{{genero.genero}}</h3></span>
+          </div>
+          <div class="card-content" style="padding-top:10px; padding-bottom:1px; padding-left:10px; padding-right: 10px;">
+            <p>{{genero.descripcion}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- CARDS 4 -->
+<div ng-if="$ctrl.variable == '4'">
+  <div style="display:flex; flex-wrap: wrap; align-content: flex-start;">
+    <div class="row" ng-repeat="genero in $ctrl.array" ng-if="genero.pag== '4' ">
+      <div class="col s12 m5" style="width: 450px;">
+        <div class="card medium z-depth-5">
+          <div class="card-image">
+            <img  src="assets/img/queen.jpg">
+            <span class="card-title"><h3>{{genero.genero}}</h3></span>
+          </div>
+          <div class="card-content" style="padding-top:10px; padding-bottom:1px; padding-left:10px; padding-right: 10px;">
+            <p>{{genero.descripcion}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Pagination -->
+<ul class="pagination center">
+  <li class="disabled"><a><i class="material-icons">chevron_left</i></a></li>
+  <li class="active blue"><a ng-click="$ctrl.variable = '1'">1</a></li>
+  <li class="waves-effect"><a ng-click="$ctrl.variable = '2'">2</a></li>
+  <li class="waves-effect"><a ng-click="$ctrl.variable = '3'">3</a></li>
+  <li class="waves-effect"><a ng-click="$ctrl.variable = '4'">4</a></li>
+  <li class="waves-effect"><a href="#!"><i class="medium material-icons">chevron_right</i></a></li>
+</ul>
+
+
+
+
+
+<!-- <div ng-repeat="genero in $ctrl.array " style="display:flex;">
+  <span><h4 style="width: 500px;">Número de Géneros incluidos:</h4></span>
+  <span><h4 style="width: 50px;"></h4>{{$index}}</span>
+</div>
+class="materialboxed" width="550"
+ -->
